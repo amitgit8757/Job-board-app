@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Board App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>CareerHub</h1>
+    <input type="text" id="searchInput" placeholder="Search for jobs..." />
+  </header>
+
+  <section class="filters">
+    <select id="locationFilter">
+      <option value="">All Locations</option>
+      <option value="Remote">Remote</option>
+      <option value="New York">New York</option>
+      <option value="San Francisco">San Francisco</option>
+      <option value="Bangalore">Bangalore</option>
+    </select>
+
+    <select id="typeFilter">
+      <option value="">All Types</option>
+      <option value="Full-Time">Full-Time</option>
+      <option value="Part-Time">Part-Time</option>
+      <option value="Internship">Internship</option>
+    </select>
+
+    <button onclick="filterJobs()">Filter</button>
+  </section>
+
+  <section id="jobsContainer" class="jobs-container"></section>
+
+  <footer>
+    <p>© 2025 CareerHub. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
